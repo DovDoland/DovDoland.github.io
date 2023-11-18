@@ -1,0 +1,394 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="DODO" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="DODO" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="DODO" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://example.com/2023/11/19/text-1/">
+
+
+
+  <title>
+python爬取某站视频 |
+Yume Shoka = DODO</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">python爬取某站视频
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-11-19 00:16:13">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-11-19T00:16:13+08:00">2023-11-19</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/19/text-1/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="DODO">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="寻觅猎物"><a href="#寻觅猎物" class="headerlink" title="寻觅猎物"></a>寻觅猎物</h1><p>okk，既然要去爬取视频或图片之类的，首先我们需要明确目标</p>
+<p>这里我平时比较喜欢魔术，所以选了平时比较喜欢看的一个魔术视频</p>
+<p>![屏幕截图 2023-11-19 001714](C:\Users\dodo\Desktop\myBlog\source_posts\text-1\屏幕截图 2023-11-19 001714.png)</p>
+<p>然后点击进入，复制他的视频网址</p>
+<p>![屏幕截图 2023-11-19 002352](C:\Users\dodo\Desktop\myBlog\source_posts\text-1\屏幕截图 2023-11-19 002352.png)</p>
+<p>这个等一下需要用到</p>
+<h1 id="编辑爬虫代码"><a href="#编辑爬虫代码" class="headerlink" title="编辑爬虫代码"></a>编辑爬虫代码</h1><h2 id="学！"><a href="#学！" class="headerlink" title="学！"></a>学！</h2><p>对于爬取内容我一无所知，所以要从网上找一下学习视频和资料，跟着视频猛猛学，一边看视频一边敲代码，其实感觉还是挺爽的</p>
+<h2 id="创新自己的代码"><a href="#创新自己的代码" class="headerlink" title="创新自己的代码"></a>创新自己的代码</h2><p>经过学习后，略懂一些代码结构和原理，根据自己的需求开始对自己的代码开始修修改改，比如需要刚才的视频网址，让自己的爬虫能够找到目标，还有小破站专有的请求头和防盗链，让自己的代码能够运行爬取</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"># 爬取B站的视频 Bilibili</span><br><span class="line"># B站的视频地址是直接存储在源网页中的，因此只需要从源网页中解析即可</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">import json</span><br><span class="line">import re</span><br><span class="line">from pprint import pprint</span><br><span class="line"></span><br><span class="line">import os</span><br><span class="line"></span><br><span class="line"># 选择一个视频 ，只需要前半部分就可以啦</span><br><span class="line">url=r&#x27;https://www.bilibili.com/video/BV1oG411J7au/&#x27;</span><br><span class="line"></span><br><span class="line"># 设置请求头</span><br><span class="line">header=&#123;</span><br><span class="line">    &quot;User-Agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.76&quot;,</span><br><span class="line">    &quot;Referer&quot;:&quot;https://www.bilibili.com/&quot;, #设置防盗链</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">resp=requests.get(url=url,headers=header)</span><br><span class="line"># print(resp.text) #成功获取</span><br><span class="line"></span><br><span class="line"># 这个baseUrl就是视频的地址</span><br><span class="line"></span><br><span class="line">obj=re.compile(r&#x27;window.__playinfo__=(.*?)&lt;/script&gt;&#x27;,re.S)</span><br><span class="line">html_data=obj.findall(resp.text)[0] #从列表转换为字符串</span><br><span class="line"># print(html_data)</span><br><span class="line"># 转化为字典的形式</span><br><span class="line">json_data=json.loads(html_data)</span><br><span class="line"># 格式化输出</span><br><span class="line"># pprint(json_data)</span><br><span class="line"># video 和 audio分别是视频和音频 因此爬取下来以后，还需要将两个合并</span><br><span class="line"></span><br><span class="line">videos=json_data[&#x27;data&#x27;][&#x27;dash&#x27;][&#x27;video&#x27;]  #这里得到的是一个列表</span><br><span class="line"># 只需要baseUrl即可</span><br><span class="line"># print(videos)</span><br><span class="line">video_url=videos[0][&#x27;baseUrl&#x27;] #视频地址</span><br><span class="line"></span><br><span class="line"># 同理，音频地址为</span><br><span class="line"></span><br><span class="line">audios=json_data[&#x27;data&#x27;][&#x27;dash&#x27;][&#x27;audio&#x27;]</span><br><span class="line">audio_url=audios[0][&#x27;baseUrl&#x27;]</span><br><span class="line"></span><br><span class="line">resp1=requests.get(url=video_url,headers=header)</span><br><span class="line"></span><br><span class="line">with open(&#x27;test.mp4&#x27;,mode=&#x27;wb&#x27;) as f:</span><br><span class="line">    f.write(resp1.content)</span><br><span class="line"></span><br><span class="line">resp2=requests.get(url=audio_url,headers=header)</span><br><span class="line"></span><br><span class="line">with open(&#x27;test.mp3&#x27;,mode=&#x27;wb&#x27;) as f:</span><br><span class="line">    f.write(resp2.content)</span><br><span class="line"></span><br><span class="line"># print(&quot;爬取完成&quot;)</span><br><span class="line"># 现在需要将视频和音频合并 需要模块ffmpeg 可以在网上看教程</span><br><span class="line"></span><br><span class="line">command=r&#x27;ffmpeg -i test.mp4 -i test.mp3 -acodec copy -vcodec copy testout.mp4&#x27;</span><br><span class="line"></span><br><span class="line">os.system(command=command)</span><br><span class="line"></span><br><span class="line"># 做到这一步即成功了！！！！</span><br></pre></td></tr></table></figure>
+
+<p>最终成果就是这样了，中间加了很多的注释，省的以后自己看不懂</p>
+<h3 id="运行成果"><a href="#运行成果" class="headerlink" title="运行成果"></a>运行成果</h3><p>试着运行了一下，视频完美的下载到了我的桌面上，成就感直接拉满，并且在调试的过程中发现，小破站的请求头和防盗链貌似是通用的，这意味着我只需要复制视频的网址，就可以随意的爬取其中所有视频的内容下载到我的电脑上，还可以根据自己的需要只爬取视频或音频！</p>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-11-19 00:39:01" itemprop="dateModified" datetime="2023-11-19T00:39:01+08:00">2023-11-19</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>John Doe <i class="ic i-at"><em>@</em></i>DODO
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2023/11/19/text-1/" title="python爬取某站视频">http://example.com/2023/11/19/text-1/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/10/08/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclffsa1cj20zk0m811l.jpg" title="Hello World">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Hello World</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%BB%E8%A7%85%E7%8C%8E%E7%89%A9"><span class="toc-number">1.</span> <span class="toc-text">寻觅猎物</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E7%88%AC%E8%99%AB%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">编辑爬虫代码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%EF%BC%81"><span class="toc-number">2.1.</span> <span class="toc-text">学！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E6%96%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">2.2.</span> <span class="toc-text">创新自己的代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%88%90%E6%9E%9C"><span class="toc-number">2.2.1.</span> <span class="toc-text">运行成果</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">2</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/10/08/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/11/19/text-1/" title="python爬取某站视频">python爬取某站视频</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2023/11/19/text-1/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
